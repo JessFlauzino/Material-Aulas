@@ -2,10 +2,19 @@ body {
   font: 1.2em / 1.5 sans-serif;
 }
 nav{
+
   & ul {
   list-style: none;
   padding: 0;
+  height: 400px;
   margin: 0;
+  display: flex;/*Torna a caixa flexivel*/
+  flex-direction: row; /*Muda a direção dos itens da caixa*/
+  justify-content: space-around; /*Alinha horizontalmente*/
+  align-items: flex-start;/*Alinha verticalmente*/
+  flex-wrap: wrap; /*Pula linha*/
+  align-content: center;/*Alinhamento de linhas qndo wrap ativado*/
+  gap: 1em;/*Espaço entre os itens*/
   }
 
   & a:link,
@@ -19,3 +28,5 @@ nav{
     text-decoration: none;
   }
 }
+
+ul > :first-child{}

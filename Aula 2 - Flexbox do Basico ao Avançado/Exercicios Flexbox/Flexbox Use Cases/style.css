@@ -51,13 +51,15 @@ body {
 /* TASK 1 */
 
 .task-1 .container {
-  
+  display: flex;
 }
 
 /* TASK 2 */
 
 .task-2 .container {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* TASK 3 */

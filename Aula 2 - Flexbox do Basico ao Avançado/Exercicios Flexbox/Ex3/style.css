@@ -6,6 +6,15 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  height: 400px;
+  margin: 0;
+  display: flex;/*Torna a caixa flexivel*/
+  flex-direction: row; /*Muda a direção dos itens da caixa*/
+  justify-content: space-between; /*Alinha horizontalmente*/
+  align-items: flex-start;/*Alinha verticalmente*/
+  flex-wrap: wrap; /*Pula linha*/
+  align-content: center;/*Alinhamento de linhas qndo wrap ativado*/
+  gap: 1em;/*Espaço entre os itens*/
 
   & li {
   background-color: #4d7298;
@@ -14,6 +23,10 @@ ul {
   color: #fff;
   padding: 0.5em;
   margin: 0.5em;
+  flex-grow: 1;
   }
 }
 
+ul > *{
+  flex-grow: 1;
+}
